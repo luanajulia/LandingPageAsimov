@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-[#000] text-white antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
