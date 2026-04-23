@@ -1,10 +1,12 @@
 // src/components/Header.jsx
+import logo from '../assets/logo.svg';
+
 export default function Header() {
   const links = ["About", "Services", "Use Cases", "Pricing", "Blog"];
   return (
     <header className="py-6 flex justify-between items-center border-b border-gray-100">
       <div className="flex items-center gap-2">
-        <span className="text-xl font-bold">POSitivus</span>
+        <img src={logo} alt="Logo" className="h-8" />
       </div>
       <nav className="hidden md:flex items-center gap-8">
         {links.map(link => (
